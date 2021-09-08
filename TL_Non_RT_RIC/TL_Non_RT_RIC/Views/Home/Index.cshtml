@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Mycss
+{
+    <link rel="stylesheet" href="~/css/Container.css" />
+}
+
+@section Scripts
+{
+    <script src="~/js/Chart/Chart.bundle.js"></script>
+    <script src="~/js/Chart/Chart.bundle.min.js"></script>
+    <script src="~/js/Chart/utils.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            console.log("load!");
+            initRic();
+        });
+    </script>
+}
+
+<div class="row RicContainer">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <div class="col-md-12" id="RicController">
+            <div class="row">
+                <div class="col-md-12">
+                    Here is RIC Title
+                </div>
+            </div>
+            <div class="InsertDataForm" id="InsertDataFrom">
+                InserData test
+            </div>
+            <div class="row" style="width:100%">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10 RicElementContainer" id="RAppList">
+                    <div class="RicEleTitle col-md-2">
+                        R APP Catalog
+                    </div>
+                    <div class="RicEleObj col-md-10">
+                        <div class="RicAddObj" id="RicAddRapp">
+                            +
+                        </div>
+                        <div class="RicLeftObj">
+                            <
+                        </div>
+                        <div class="RicObjList">
+                            <div class="RicObj" name="rApp1" value="rAppValue1">
+                                1
+                            </div>
+                            <div class="RicObj">
+                                2
+                            </div>
+                            <div class="RicObj">
+                                3
+                            </div>
+                        </div>
+                        <div class="RicRightObj">
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+            <div class="row" style="width:100%">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10 RicElementContainer" id="KPIList">
+                    <div class="RicEleTitle col-md-2">
+                        KPI Monitor
+                    </div>
+                    <div class="RicEleObj col-md-10">
+                        <div class="RicAddObj" id="RicAddKPI">
+                            +
+                        </div>
+                        <div class="RicLeftObj">
+                            <
+                        </div>
+                        <div class="RicObjList">
+                            <div class="RicObj">
+                                1
+                            </div>
+                            <div class="RicObj">
+                                2
+                            </div>
+                            <div class="RicObj">
+                                3
+                            </div>
+                        </div>
+                        <div class="RicRightObj">
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+            <div class="row" style="width:100%">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10 RicElementContainer" id="NearRicList">
+                    <div class="RicEleTitle col-md-2">
+                        Near-RT RIC
+                    </div>
+                    <div class="RicEleObj col-md-10">
+                        <div class="RicAddObj" id="RicAddRic">
+                            +
+                        </div>
+                        <div class="RicLeftObj">
+                            <
+                        </div>
+                        <div class="RicObjList">
+                            <div class="RicObj">
+                                1
+                            </div>
+                            <div class="RicObj">
+                                2
+                            </div>
+                            <div class="RicObj">
+                                3
+                            </div>
+                        </div>
+                        <div class="RicRightObj">
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+
+
+
+
